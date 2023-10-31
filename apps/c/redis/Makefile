@@ -11,7 +11,7 @@ redis-version := 7.0.12
 redis-dir := $(CURDIR)/redis-$(redis-version)
 redis-objs := $(redis-dir)/src/redis-server.o
 redis-bin := redis-server
-
+APP ?= $(CURDIR)
 redis-build-args := \
   CC=$(CC) \
   CFLAGS="$(CFLAGS)" \

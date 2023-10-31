@@ -1,0 +1,11 @@
+[build]
+compiler = "gcc"
+
+[[targets]]
+name = "memtest"
+src = "./"
+include_dir = "../../../ulib/axlibc/include"
+type = "exe"
+cflags = "-nostdinc -fno-builtin -ffreestanding -Wall -g"
+libs = ""
+deps = []
